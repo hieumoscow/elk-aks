@@ -24,7 +24,6 @@ curl -u "elastic:$PASSWORD" -k "https://$ESIP:9200"
 
 
 kubectl create namespace logging
-wget https://raw.githubusercontent.com/fluent/
 kubectl apply -f fluent-bit-service-account.yaml
 kubectl apply -f fluent-bit-role.yaml
 kubectl apply -f fluent-bit-role-binding.yaml
