@@ -1,6 +1,7 @@
 # ELK on AKS
 
-## ECK 
+## ECK
+
 ```bash
 cd ECK
 RG=ELK-RG
