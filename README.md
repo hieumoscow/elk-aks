@@ -29,4 +29,18 @@ kubectl apply -f fluent-bit-service-account.yaml
 kubectl apply -f fluent-bit-role.yaml
 kubectl apply -f fluent-bit-role-binding.yaml
 kubectl apply -f fluent-bit-configmap.yaml
+
 ```
+
+## Elastic OSS K8s yamls
+
+```bash
+cd self-hosted
+kubectl create ns elastic-selfhosted
+kubectl config set-context --current --namespace elastic-selfhosted
+kubectl apply -f .
+```
+
+## Elastic OSS Helm Chart
+
+https://github.com/elastic/helm-charts
