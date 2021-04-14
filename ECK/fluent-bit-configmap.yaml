@@ -55,6 +55,10 @@ data:
         Logstash_Format On
         Replace_Dots    On
         Retry_Limit     False
+        tls             On
+        tls.verify      Off
+        HTTP_User       elastic
+        HTTP_Passwd     n2VTG9j54f7q0J0u11mhflK8
 
   parsers.conf: |
     [PARSER]
