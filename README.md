@@ -10,7 +10,7 @@ az group create --name $RG -l southeastasia -o table
 az aks create --resource-group $RG --name $CLUSTER --node-count 3 --generate-ssh-keys
 az aks get-credentials --resource-group $RG --name $CLUSTER
 
-kubectl apply -f https://download.elastic.co/downloads/eck/1.5.0/all-in-one.yaml
+kubectl apply -f eck-1.5.0-all-in-one.yaml
 kubectl apply -f elasticsearch.yaml
 
 kubectl logs -f quickstart-es-default-0 
